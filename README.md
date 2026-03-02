@@ -16,14 +16,7 @@ It includes:
 
 ## Getting Started
 
-### 1. Kafka Docker Setup
+### Kafka Docker Setup
 
-Follow `kafka guide.pdf` to run Kafka inside Docker on Ubuntu. Ensure the advertised listener is set to the Docker host IP so that Spring Boot can connect.
-
-
-spring.kafka.producer.key-serializer=org.apache.kafka.common.serialization.StringSerializer
-spring.kafka.producer.value-serializer=org.apache.kafka.common.serialization.StringSerializer
-
-spring.kafka.consumer.group-id=delivery-consumer-group
-spring.kafka.consumer.key-deserializer=org.apache.kafka.common.serialization.StringDeserializer
-spring.kafka.consumer.value-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+Follow the [kafka guide.pdf](kafka%20guide.pdf) to run Kafka inside Docker on an Ubuntu virtual machine.  
+Make sure the advertised listener in Kafka is set to the Docker host IP so your Spring Boot app (running on Windows or elsewhere) can connect properly.
